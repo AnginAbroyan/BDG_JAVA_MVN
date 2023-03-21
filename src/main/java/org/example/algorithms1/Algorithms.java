@@ -10,7 +10,9 @@ public class Algorithms {
      * kg*x bags of rices.
      * @param smallBag is the number of 1kg rice bags.
      * @param bigBag is the number of 5kg rice bags.
-     * @returns true if it's possible to get n quantity of rice with smallBag and bigBag.
+     * @return true if it's possible to get n quantity of rice with smallBag and bigBag.
+     *
+     * O(1) complexity
      */
     public boolean ricePack(int smallBag, int bigBag, int goal) {
         if (smallBag < 0 || bigBag < 0 || goal < 0) {
@@ -27,7 +29,9 @@ public class Algorithms {
 
     /**
      * largestPrimeFactor method calculates the largest prime factor of a given number.
-     * @returns the largest prime factor of the given number.
+     * @return the largest prime factor of the given number.
+     *
+     * O(N) complexity
      */
     public long largestPrimeFactor() {
         System.out.println("Please enter the number: ");
@@ -41,7 +45,7 @@ public class Algorithms {
                 number = number / 2;
             }
         }
-        for (long i = 3; i <= Math.sqrt(number); i += 2) {
+        for (long i = 3; i*i <= number; i += 2) {
             while (number % i == 0) {
                 largestPrime = i;
                 number = number / i;
@@ -56,6 +60,8 @@ public class Algorithms {
 
     /**
      * odd_even method prints out odd if a random number between 1 and 100 is odd, otherwise it prints even.
+     *
+     * O(1) complexity
      */
     void odd_even() {
         Random rand = new Random();
@@ -72,6 +78,7 @@ public class Algorithms {
 
     /**
      * max_min_Rand method return the largest and the smallest random numbers between  and 100.
+     * O(1) complexity
      */
     public void max_min_Rand() {
         Random rand = new Random();

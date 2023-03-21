@@ -11,6 +11,7 @@ public class ArrayUtil {
     /**
      * Ex1
      * The method prints out all the positive elements in int[] array.
+     * O(n^2) complexity
      */
     public int[] arrIntPos(int[] n) {
 //        int[] n = {1, 0, 2, -5, -856, -95637, 256, 896};
@@ -35,6 +36,7 @@ public class ArrayUtil {
     /**
      * EX2
      * The method prints out the elements of short[] s array in reverse order. EX. 257 >> 752
+     * O(N^2) complexity
      */
     public short[] reverseArr(short[] s) {
 //        short[] s = {1, 0, 2, -5, 0, -856, -32768, 256, 896};
@@ -51,6 +53,7 @@ public class ArrayUtil {
     /**
      * EX3
      * maxArr method finds and prints the greatest element of long[] l array.
+     * O(n) complexity
      */
     public long maxArr(long[] l) {
 //        long[] l = {1, 2, 5, 896, 54652, 999999, -256, -1};
@@ -67,6 +70,7 @@ public class ArrayUtil {
     /**
      * Ex4
      * MinArr method prints the smallest element of float[] f  array.
+     * O(n) complexity
      */
     public float minArr(float[] f) {
 //        float[] f = {1.222f, 0.555555f, -256.888f, 2.6956f};
@@ -82,6 +86,7 @@ public class ArrayUtil {
     /**
      * Ex5
      * transferArr method transfers all the elements of int[] n array into int[] m array.
+     * O(n^2) complexity
      */
     public int[] transferArr(int[] n) {
 //        int[] n = {1, 2, 3, 4, 5, 6};
@@ -99,6 +104,7 @@ public class ArrayUtil {
      * Ex6
      * sumArrays method returns an array which is created by adding up two arrays elements accordingly.
      * ex. array1 = {1,5,6,4,7}; array2 = {7,4,2,3,5};    array3 = {8,9,8,7,12}
+     * O(n) complexity
      */
     public int[] sumArrays(int[] a, int[] b) {
 //        int[] a = {1, 5, 6, 4, 7};
@@ -118,6 +124,7 @@ public class ArrayUtil {
      * countK method counts the occurrence of k number in an array.
      *
      * @param k, the number which occurrence is counted.
+     *           O(n) complexity
      */
     public int countK(int k) {
         int[] array = {1, 5, 6, 4, 5};
@@ -136,6 +143,7 @@ public class ArrayUtil {
      * nonRepeatingTriplets method prints all not repeating triplets.
      *
      * @returns the triplets that are not repeating.
+     * O(n^3) complexity
      */
     public int nonRepeatingTriplets(int[] array) {
 //        int[] array = {1, 5, 6, 4};
@@ -159,6 +167,7 @@ public class ArrayUtil {
     /**
      * Ex9
      * desArr method sorts the array in descending order.
+     * O(n^2)
      */
     public void desArr() {
         int[] array = {9, 8, 7, 6, 25, 5, 4, 3, 2, 1, 15};
@@ -180,6 +189,7 @@ public class ArrayUtil {
     /**
      * Ex10
      * oddsToTheEnd method sorts odd elements of an array to the end.
+     * O(n^2)
      */
     public void oddsToTheEnd() {
         int[] array = {1, 5, 6, 4, 9, 18, 7, 1, 2, 4,};
@@ -201,6 +211,7 @@ public class ArrayUtil {
     /**
      * Ex11
      * noZeros method removes all zeros from an array.
+     * O(n)
      */
     public void noZeros() {
         int[] array = {1, 0, 6, 4, 9, 0, 0};
@@ -225,6 +236,7 @@ public class ArrayUtil {
     /**
      * Ex12
      * maxAscSub method finds and prints the longest increasing subarray from an array.
+     * O(n)
      */
     public void maxAscSub() {
         int[] array = {1, 5, 6, 4, 5, 9, 125, 0, 5, 0, 1, 2, 3, 4, 7, 7, 9, 10, 11, 12, 13, 18, 22, 1};
@@ -337,6 +349,7 @@ public class ArrayUtil {
     /**
      * Ex16
      * isEven method returns Yes, if the sum of each row's elements of square matrix is even, otherwise prints NO.
+     * O(n^2)
      */
     public boolean isEven(int[][] a) {
 //        int[][] a = {{1, -1, 0, 0},
