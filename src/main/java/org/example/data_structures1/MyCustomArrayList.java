@@ -8,7 +8,6 @@ import java.util.List;
 public class MyCustomArrayList<T> implements Iterable<T> {
 
     private List<T> list = new ArrayList<>();   // creating arraylist with T type elements in it.
-    private int capacity = 10;
     private T[] elements;
     private int size;
 
@@ -241,22 +240,21 @@ public class MyCustomArrayList<T> implements Iterable<T> {
      * @return elementList
      */
     public MyCustomArrayList<T> copy(MyCustomArrayList<T> elementList){
-        for(int i = 0; i < this.size; i++){
-            elementList.set(i, elements[i]);
-        }
+
+        System.arraycopy(elements,0,elementList.toArray(),0,10);
         return elementList;
     }
 
-    public boolean reverse(MyCustomArrayList<T> elementList){
-        System.arraycopy(list, 0,elementList,0,capacity);
-
-        for(int i = 0, j = size-1; i<size; i++,j--) {
-
-        }
-
-        return true;
-
-    }
+//    public boolean (MyCustomArrayList<T> elementList){
+//        System.arraycopy(list, 0,elementList,0,capacity);
+//
+//        for(int i = 0, j = size-1; i<size; i++,j--) {
+//
+//        }
+//
+//        return true;
+//
+//    }
 
 
 
