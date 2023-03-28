@@ -13,7 +13,7 @@ public class MyCustomLinkedList<E> {
      * inner, because we don't want others to have access to it beside our MyCustomLinkedList<E> class's objects and methods,
      * which in this case have access to data, next and prev fields.
      */
-    class Node<E> {
+   private static class Node<E> {
         E data;
         Node<E> next;
         Node<E> prev;
