@@ -132,6 +132,7 @@ public class MyCustomLinkedList<E> {
      * @return the removed element
      */
     public E removeFirst() {
+        Node<E> current = head, prev = null;
         if (isEmpty()) {
             return null;
         }
@@ -144,6 +145,7 @@ public class MyCustomLinkedList<E> {
         currentSize--;
         return tmp;
     }
+
 
     /**
      * removes an elements from the end of the list
@@ -245,4 +247,6 @@ public class MyCustomLinkedList<E> {
         }
         System.out.print("]\n");
     }
+
+
 }
